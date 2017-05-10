@@ -1,0 +1,47 @@
+/*
+* === Test Javascript ===
+*/
+
+function Person(name, age, gender) {
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+        this.bio = function() {
+        
+        if (this.gender === 'male' && this.age <= 40  && this.age >= 30 ){
+        
+         alert(this.name + ' is ' + this.age + ' years old.');
+        };
+        
+        this.greeting = function() {
+          alert('Hi! I\'m ' + this.name + '.');
+          }
+         
+        };
+      };
+      
+var person1 = new Person('Bob', 32, 'male');
+
+person1['age']
+person1.bio()
+
+var person2 = new Person('Sheyla', 23, 'female');
+
+person2['age']
+person2.bio()
+
+
+var person3 = new Person('John', 63, 'male');
+
+person3['age']
+person3.bio()
+
+var person4 = new Person('Paul', 13, 'male');
+
+person4['age']
+person4.bio()
+
+var person5 = new Person('George', 36, 'male');
+
+person5['age']
+person5.bio()
